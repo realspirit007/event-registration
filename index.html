@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Event Registration Form</h2>
+
+        <form action="success.html" method="get">
+
+            <input type="text" placeholder="Enter Full Name" required>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="tel" placeholder="Enter Phone Number" required>
+
+            <input type="text" placeholder="Enter College Name" required>
+
+            <select required>
+                <option value="">Select Event</option>
+                <option>Web Development</option>
+                <option>Hackathon</option>
+                <option>Technical Quiz</option>
+            </select>
+
+            <br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender" value="Male"> Male
+
+            <input type="radio" name="gender" value="Female"> Female
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
